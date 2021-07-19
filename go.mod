@@ -4,11 +4,11 @@ go 1.17
 
 require (
 	github.com/jetstack/cert-manager v1.7.0
-	github.com/miekg/dns v1.1.34
-	github.com/stretchr/testify v1.7.0
 	k8s.io/apiextensions-apiserver v0.23.1
 	k8s.io/client-go v0.23.1
 )
+
+require github.com/miekg/dns v1.1.34 // indirect
 
 require (
 	github.com/NYTimes/gziphandler v1.1.1 // indirect
@@ -48,7 +48,6 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_golang v1.11.0 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.28.0 // indirect
