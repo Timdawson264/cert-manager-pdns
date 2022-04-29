@@ -9,6 +9,7 @@
 groupName: acme.powerdns.com
 
 certManager:
+  #Namespace that cert-manager is insalled in
   namespace: cert-manager
   serviceAccountName: cert-manager
 
