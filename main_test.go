@@ -15,14 +15,12 @@ func TestRunsSuite(t *testing.T) {
 	// The manifest path should contain a file named config.json that is a
 	// snippet of valid configuration that should be included on the
 	// ChallengeRequest passed as part of the test cases.
-	
+
 	fixture := dns.NewFixture(&customDNSProviderSolver{},
 		dns.SetResolvedZone(zone),
 		dns.SetAllowAmbientCredentials(false),
 		dns.SetManifestPath("testdata/my-custom-solver"),
-		dns.SetBinariesPath("_test/kubebuilder/bin"),
 		dns.SetDNSServer("127.0.0.1:53"),
-
 		dns.SetUseAuthoritative(false),
 		dns.SetStrict(true),
 	)

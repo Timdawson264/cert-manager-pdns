@@ -4,7 +4,7 @@ jobs:
   test:
     working_directory: ~/repo
     docker:
-      - image: circleci/golang:1.16
+      - image: circleci/golang:1.17
       - image: mariadb:10.1
         environment:
           MYSQL_ROOT_PASSWORD: supersecret
